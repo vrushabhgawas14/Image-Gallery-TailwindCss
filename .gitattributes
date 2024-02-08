@@ -1,3 +1,6 @@
-* linguist-vendored
-*.js linguist-vendored=false #don't hide js files
+* linguist-vendored 
+# ignore everything
+*.js linguist-vendored=false 
+# don't hide js files
 *.html linguist-vendored=false
+# don't hide html files
