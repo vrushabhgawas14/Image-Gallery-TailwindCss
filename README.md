@@ -45,3 +45,17 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
  <link href="./output.css" rel="stylesheet">
 ```
+
+- Everytime you start for development it is quite anoying to run CLI cmd, instead do this
+
+> navigate to package.json and inside scripts add folowing json
+
+```
+"build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+```
+
+- Now when we have to start program, run only
+
+```
+npm run build
+```
