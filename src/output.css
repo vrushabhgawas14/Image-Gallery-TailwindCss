@@ -544,42 +544,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .flex {
   display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .bg-sky-950 {
@@ -587,9 +575,8 @@ video {
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
-.text-neutral-400 {
-  --tw-text-opacity: 1;
-  color: rgb(163 163 163 / var(--tw-text-opacity));
+.gallery::-webkit-scrollbar{
+  display: none;
 }
 
 .image-div{
@@ -602,6 +589,11 @@ video {
   flex: none;
 }
 
+.image-div-as{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 500px) {
   .max-\[500px\]\:flex {
     display: flex;
@@ -609,5 +601,13 @@ video {
 
   .max-\[500px\]\:flex-col {
     flex-direction: column;
+  }
+
+  .max-\[500px\]\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .max-\[500px\]\:border-t-0 {
+    border-top-width: 0px;
   }
 }

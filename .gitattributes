@@ -1,4 +1,4 @@
-*.css linguist-vendored=true
+#*.css linguist-vendored=true
 # ignore everything
 #*.js linguist-vendored=false 
 # don't hide js files

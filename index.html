@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-sky-950">
-    
-    <div class="container text-neutral-400 w-200 flex max-[500px]:flex-col">
-        <div class="image-div max-[500px]:flex max-[500px]:flex-col">
-            <span><img src="./assets/images/image-1.png" alt="image-1"></span>
-            <span><img src="./assets/images/image-2.png" alt="image-2"></span>
-            <span><img src="./assets/images/image-3.png" alt="image-3"></span>
-        </div>
-        <div class="image-div max-[500px]:flex max-[500px]:flex-col"">
-            <span><img src="./assets/images/image-4.png" alt="image-1"></span>
-            <span><img src="./assets/images/image-5.png" alt="image-2"></span>
-            <span><img src="./assets/images/image-6.png" alt="image-3"></span>
-        </div>
+    <div class="gallery-wrap flex items-center justify-center mx-3 my-auto">
+        <img src="./assets/images/back.png" alt="backImg">
+        <div class="gallery w-200 flex max-[500px]:flex-col overflow-scroll">
+            <div class="image-div max-[500px]:flex max-[500px]:flex-col max-[500px]:border-b-0">
+                <img src="./assets/images/image-1.png" alt="image-1">
+                <img src="./assets/images/image-2.png" alt="image-2">
+                <img src="./assets/images/image-3.png" alt="image-3">
+            </div>
+            <div class="image-div max-[500px]:flex max-[500px]:flex-col max-[500px]:border-t-0">
+                <img src="./assets/images/image-4.png" alt="image-1">
+                <img src="./assets/images/image-5.png" alt="image-2">
+                <img src="./assets/images/image-6.png" alt="image-3">
+            </div>
+        </div>  
+        <img src="./assets/images/next.png" alt="nextImg">
     </div>
 </body>
 </html>
