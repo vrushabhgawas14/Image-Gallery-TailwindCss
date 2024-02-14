@@ -601,6 +601,17 @@ video {
   flex: none;
 }
 
+.image-div img{
+  filter: grayscale(100%);
+  transition: transform 0.3s;
+}
+
+.image-div img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
 .image-div-as{
   display: flex;
   flex-direction: column;
@@ -614,10 +625,5 @@ video {
   .sm\:border-x-0 {
     border-left-width: 0px;
     border-right-width: 0px;
-  }
-
-  .sm\:bg-orange-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 115 22 / var(--tw-bg-opacity));
   }
 }
