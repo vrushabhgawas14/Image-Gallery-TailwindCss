@@ -20,7 +20,3 @@
     display: flex;
     flex-direction: column;
 }
-
-.backBtn,.nextBtn{
-    cursor: pointer;
-}
