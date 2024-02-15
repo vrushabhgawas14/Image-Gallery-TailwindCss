@@ -563,6 +563,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -597,6 +601,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -748,12 +756,20 @@ video {
     height: 3.5rem;
   }
 
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
   .sm\:w-12 {
     width: 3rem;
   }
 
   .sm\:w-14 {
     width: 3.5rem;
+  }
+
+  .sm\:w-10 {
+    width: 2.5rem;
   }
 }
 
