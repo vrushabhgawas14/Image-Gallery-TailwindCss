@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,18 @@
     <!-- <script defer src="./assets/ManualTheme.js"></script>  -->
     <script defer src="./assets/theme.js"></script>
 </head>
-<body class="bg-sky-950 dark:bg-black">
+<body class="bg-white dark:bg-black transition-all ease-linear">
     <div class="flex items-center justify-center my-4">
         <button id="theme" 
-            class="w-9 h-9 rounded-lg flex items-center justify-center bg-orange-400 dark:bg-red-600">
-            <img src="./assets/images/svgImg/light.svg" alt="light" class="w-7 h-7 hidden dark:block">
-            <img src="./assets/images/svgImg/dark.svg" alt="dark" class="w-7 h-7 dark:hidden">
+            class="w-9 h-9 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center bg-gray-400 dark:bg-gray-600">
+            <img src="./assets/images/svgImg/light.svg" alt="light" class="w-7 h-7 sm:w-12 sm:h-12 hidden dark:block">
+            <img src="./assets/images/svgImg/dark.svg" alt="dark" class="w-7 h-7 sm:w-12 sm:h-12 dark:hidden">
         </button>
     </div>
     <div 
-        class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3"
-    >
-        <img src="./assets/images/back.png" alt="backImg" id="backBtn" 
-            class="m-3 w-12 cursor-pointer sm:hidden"
-        >
+        class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3">
+        <img src="./assets/images/svgImg/back.svg" alt="backImg" id="backBtn" 
+            class="m-3 w-12 cursor-pointer sm:hidden">
         <div class="gallery flex overflow-scroll">
             <div class="image-div pl-3">
                 <img src="./assets/images/image-1.png" alt="img1">
@@ -36,9 +34,8 @@
                 <img src="./assets/images/image-6.png" alt="img3">
             </div>
         </div>  
-        <img src="./assets/images/next.png" alt="nextImg" id="nextBtn" 
-            class="m-3 w-12 cursor-pointer sm:hidden"
-        >
+        <img src="./assets/images/svgImg/next.svg" alt="nextImg" id="nextBtn" 
+            class="m-3 w-12 cursor-pointer sm:hidden">
     </div>
 </body>
 </html>
