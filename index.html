@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="./src/output.css">
     <script defer src="./assets/script.js"></script>
+    <!-- For Manual Theme -->
+    <!-- <script defer src="./assets/ManualTheme.js"></script>  -->
     <script defer src="./assets/theme.js"></script>
 </head>
-<body class="dark-color">
+<body class="bg-sky-950 dark:bg-black">
     <div class="flex items-center justify-center my-4">
-        <button id="theme" class="w-32 font-bold rounded">Light</button>
+        <button id="theme" 
+            class="w-9 h-9 rounded-lg flex items-center justify-center bg-orange-400 dark:bg-red-600">
+            <img src="./assets/images/svgImg/light.svg" alt="light" class="w-7 h-7 hidden dark:block">
+            <img src="./assets/images/svgImg/dark.svg" alt="dark" class="w-7 h-7 dark:hidden">
+        </button>
     </div>
-    <div class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3">
-        <img src="./assets/images/back.png" alt="backImg" id="backBtn" class="m-3 w-12 cursor-pointer sm:hidden">
+    <div 
+        class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3"
+    >
+        <img src="./assets/images/back.png" alt="backImg" id="backBtn" 
+            class="m-3 w-12 cursor-pointer sm:hidden"
+        >
         <div class="gallery flex overflow-scroll">
-            <div class="image-div sm:border-x-0">
+            <div class="image-div pl-3">
                 <img src="./assets/images/image-1.png" alt="img1">
                 <img src="./assets/images/image-2.png" alt="img2">
                 <img src="./assets/images/image-3.png" alt="img3">
             </div>
-            <div class="image-div sm:border-x-0">
+            <div class="image-div px-3">
                 <img src="./assets/images/image-4.png" alt="img1">
                 <img src="./assets/images/image-5.png" alt="img2">
                 <img src="./assets/images/image-6.png" alt="img3">
             </div>
         </div>  
-        <img src="./assets/images/next.png" alt="nextImg" id="nextBtn" class="m-3 w-12 cursor-pointer sm:hidden">
+        <img src="./assets/images/next.png" alt="nextImg" id="nextBtn" 
+            class="m-3 w-12 cursor-pointer sm:hidden"
+        >
     </div>
 </body>
 </html>
