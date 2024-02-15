@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .gallery::-webkit-scrollbar{
-    /* display: none; */
+    display: none;
 }
 
 .image-div{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid var(--border);
     width: 100%;
     display: grid;;
     grid-template-columns: auto auto auto;
@@ -27,7 +27,25 @@
     z-index: 2;
 }
 
-.image-div-as{
-    display: flex;
-    flex-direction: column;
+:root{
+    --color1: #001f85b4;
+    --color2: #070020d1;
+    --color3:#cfcfcfd1;
+    /* 070020d1 */
+}
+
+.dark-color{
+    background-color: var(--color2);
+    --btn-bg : var(--color3);
+    --border: var(--color3);
+}
+
+.light-color{
+    background-color: var(--color1);
+    --btn-bg : var(--color2);
+    --border: var(--color2);
+}
+
+#theme{
+    background: var(--btn-bg);
 }
