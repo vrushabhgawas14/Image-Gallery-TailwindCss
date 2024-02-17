@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
     <script defer src="./assets/script.js"></script>
     <!-- For Manual Theme -->
@@ -19,7 +20,7 @@
         </button>
     </div>
     <div 
-        class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3">
+        class="gallery-wrap flex items-center justify-center mx-10 my-10 sm:absolute sm:top-[30%] sm:mx-3 sm:flex-col">
         <img src="./assets/images/svgImg/back.svg" alt="backImg" id="backBtn" 
             class="m-3 w-12 cursor-pointer sm:hidden">
         <div class="gallery flex overflow-scroll">
@@ -36,6 +37,13 @@
         </div>  
         <img src="./assets/images/svgImg/next.svg" alt="nextImg" id="nextBtn" 
             class="m-3 w-12 cursor-pointer sm:hidden">
+
+        <div class="flex">
+        <img src="./assets/images/svgImg/back.svg" alt="backImg" onclick="goLeft()" 
+            class="m-3 w-8 cursor-pointer md:hidden">
+        <img src="./assets/images/svgImg/next.svg" alt="nextImg" onclick="goRight()"
+            class="m-3 w-8 cursor-pointer md:hidden">
+        </div>
     </div>
 </body>
 </html>

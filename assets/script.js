@@ -8,12 +8,16 @@ scrollContainer.addEventListener('wheel',(e) =>{
     scrollContainer.scrollLeft += e.deltaY;
 });
 
-backBtn.addEventListener('click',()=>{
+backBtn.addEventListener('click',goLeft);
+
+nextBtn.addEventListener('click',goRight);
+
+function goLeft(){
     scrollContainer.scrollLeft -= 1200;
     scrollContainer.style.scrollBehavior = "smooth";
-});
+};
 
-nextBtn.addEventListener('click',()=>{
+function goRight(){
     scrollContainer.scrollLeft += 1200;
     scrollContainer.style.scrollBehavior = "smooth";
-});
+};
