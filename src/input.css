@@ -7,11 +7,10 @@
 }
 
 .image-div{
-    grid-template-columns: auto auto auto;
-    @apply border-black border-4 dark:border-gray-400 flex-none py-4 grid w-full gap-x-3 border-x-0;
+    @apply  flex py-4 gap-x-3;
 }
 
 .image-div img{
-    @apply grayscale transition-transform duration-300 hover:grayscale-0 hover:scale-110 hover:z-10;
+    @apply grayscale transition-transform duration-300 hover:grayscale-0 hover:scale-110 hover:z-10 h-[70vh] sm:h-[200px];
 }
 
