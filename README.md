@@ -24,7 +24,7 @@ npx tailwindcss init
 
 - Modify the extension path in tailwind.config.js
 
-  > content: [".{html,js}"]
+  > content: ["*.{html,js}"]
 
 - Make folder src/input.css and paste the following :
 
