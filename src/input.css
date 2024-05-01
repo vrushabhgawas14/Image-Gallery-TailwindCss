@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.gallery::-webkit-scrollbar{
+#gallery::-webkit-scrollbar{
     @apply hidden;
 }
 
-.image-div{
+#gallery{
     @apply  flex py-4 gap-x-3;
 }
 
-.image-div img{
+#gallery img{
     @apply grayscale transition-transform duration-300 hover:grayscale-0 hover:scale-110 hover:z-10 h-[70vh] sm:h-[200px];
 }
 
